@@ -10,24 +10,28 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import stage.aratus.inventaire_back.entity.Product;
-import stage.aratus.inventaire_back.repository.ProductRepository;
+import stage.aratus.inventaire_back.service.ProductService;
 
-
+//TODO create get method to get products by inventory id
 @RestController
 @RequestMapping("/api/Products")
 public class ProductController {
 
+    private ProductService productService;
+
 @Autowired
-private ProductRepository productRepository;
+ProductController(ProductService productService){
+    this.productService = productService;
+}
 
 @GetMapping
 public List<Product> getAllProducts() {
-return productRepository.findAll();
+return productService.getAllProduct();
 }
 
 @PostMapping
 public Product createProduct(@RequestBody Product product) {
-return productRepository.save(product);
+    return productService.saveProduct(product);
 }
 // Autres points de terminaison CRUD (PUT, DELETE) peuvent être ajoutés ici
 }
