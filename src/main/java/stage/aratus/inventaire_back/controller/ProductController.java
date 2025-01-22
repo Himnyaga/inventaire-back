@@ -1,4 +1,4 @@
-package stage.aratus.inventaire_back;
+package stage.aratus.inventaire_back.controller;
 
 import java.util.List;
 
@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import stage.aratus.inventaire_back.entity.Product;
+import stage.aratus.inventaire_back.repository.ProductRepository;
 
 
 @RestController

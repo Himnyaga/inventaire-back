@@ -1,7 +1,9 @@
-package stage.aratus.inventaire_back;
+package stage.aratus.inventaire_back.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import stage.aratus.inventaire_back.entity.Product;
 
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {}
