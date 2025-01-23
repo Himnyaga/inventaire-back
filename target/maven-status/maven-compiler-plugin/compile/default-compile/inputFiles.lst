@@ -1,4 +1,5 @@
 C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\controller\InventoryController.java
+C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\controller\LocationController.java
 C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\controller\OwnerController.java
 C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\controller\ProductController.java
 C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\entity\Inventory.java
@@ -7,9 +8,11 @@ C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\entity\Produ
 C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\entity\Proprietary.java
 C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\InventaireBackApplication.java
 C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\repository\InventoryRepository.java
+C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\repository\LocationRepository.java
 C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\repository\ProductRepository.java
 C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\repository\ProprietaryRepository.java
 C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\service\InventoryService.java
+C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\service\LocationService.java
 C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\service\ProductService.java
 C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\service\ProprietaryService.java
 C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\ServletInitializer.java
