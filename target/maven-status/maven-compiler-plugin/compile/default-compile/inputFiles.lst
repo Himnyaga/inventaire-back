@@ -1,4 +1,5 @@
-C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\controller\HelloWorld.java
+C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\controller\InventoryController.java
+C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\controller\OwnerController.java
 C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\controller\ProductController.java
 C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\entity\Inventory.java
 C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\entity\Location.java
@@ -7,4 +8,6 @@ C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\entity\Propr
 C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\InventaireBackApplication.java
 C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\repository\ProductRepository.java
 C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\repository\ProprietaryRepository.java
+C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\service\ProductService.java
+C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\service\ProprietaryService.java
 C:\stage\inventaire-back\src\main\java\stage\aratus\inventaire_back\ServletInitializer.java
