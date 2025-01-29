@@ -1,12 +1,14 @@
 package stage.aratus.inventaire_back.entity;
 
 
+import java.util.Set;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 
 @Entity
 public class Location{
@@ -20,13 +22,13 @@ private String name;
 @Column
 private String adress;
 
-@ManyToOne
-private Product product;
+@OneToMany(mappedBy = "location")
+private Set<Product> product;
 
 public Location() {
 }
 
-public Location(Long id, String name, String adress, Product product) {
+public Location(Long id, String name, String adress, Set<Product> product) {
     this.id = id;
     this.name = name;
     this.adress = adress;
@@ -57,11 +59,11 @@ public void setAdress(String adress) {
     this.adress = adress;
 }
 
-public Product getProduct() {
+public Set<Product> getProduct() {
     return product;
 }
 
-public void setProduct(Product product) {
+public void setProduct(Set<Product> product) {
     this.product = product;
 }
 

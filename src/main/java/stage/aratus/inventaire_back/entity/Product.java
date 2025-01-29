@@ -8,7 +8,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Product {
@@ -28,8 +28,8 @@ private Double price;
 @Column
 private Integer quantity;
 
-@OneToMany(mappedBy = "product")
-private Set<Location> locations;
+@ManyToOne
+private Location location;
 
 @ManyToMany
 private Set<Inventory> inventory;
@@ -39,14 +39,14 @@ public Product() {
 }
 
 
-public Product(Long id, String name, String description, Double price, Integer quantity, Set<Location> locations,
+public Product(Long id, String name, String description, Double price, Integer quantity, Location location,
         Set<Inventory> inventory) {
     this.id = id;
     this.name = name;
     this.description = description;
     this.price = price;
     this.quantity = quantity;
-    this.locations = locations;
+    this.location = location;
     this.inventory = inventory;
 }
 
@@ -101,13 +101,13 @@ public void setQuantity(Integer quantity) {
 }
 
 
-public Set<Location> getLocations() {
-    return locations;
+public Location getLocation() {
+    return location;
 }
 
 
-public void setLocations(Set<Location> locations) {
-    this.locations = locations;
+public void setLocations(Location location) {
+    this.location = location;
 }
 
 
