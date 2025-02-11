@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import io.swagger.v3.oas.annotations.Operation;
 import stage.aratus.inventaire_back.entity.Product;
 import stage.aratus.inventaire_back.service.ProductService;
 
@@ -29,6 +30,7 @@ public List<Product> getAllProducts() {
 return productService.getAllProduct();
 }
 
+@Operation(summary ="Créer un produit")
 @PostMapping
 public Product createProduct(@RequestBody Product product) {
     return productService.saveProduct(product);
